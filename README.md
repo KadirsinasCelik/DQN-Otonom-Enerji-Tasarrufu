@@ -665,6 +665,9 @@ PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu>
 
 ## Sonuç ve yorum
 
+* **Toplam Test Ödülü:** 6768.66 (Maksimum teorik ödüle yakınsama)
+* **Konfor Oranı (Comfort Rate):** Mesai saatleri (aktif ofis kullanımı) boyunca hedef sıcaklık bandında (24.5°C - 25.5°C) kalma başarısı **%95+** olarak ölçülmüştür.
+
 Eğitim sürecinde ajan başlangıçta yüksek keşif oranı nedeniyle rastgele klima kararları verir. Episode sayısı arttıkça epsilon değeri azalır ve ajan daha bilinçli kararlar üretmeye başlar.
 
 Modelin öğrendiği temel davranışlar:
