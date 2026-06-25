@@ -31,7 +31,7 @@ def train_agent():
             next_state, reward, done = env.step(action)
             total_reward += reward
             
-            # 3. Bu tecrübe hafızaya kaydedilir
+            # 3.  tecrübe hafızaya kaydedilmeesi.
             agent.memory.push(state, action, reward, next_state, done)
             
             # 4. Durum güncellenir
@@ -61,8 +61,6 @@ def train_agent():
     print("Eğitim Tamamlandı! Model 'dqn_model.pth' olarak kaydediliyor...")
     torch.save(agent.policy_net.state_dict(), "dqn_model.pth")
     
-    # --- İŞTE YENİ EKLENEN KISIM ---
-    # Eğitim geçmişini %100 organik olarak ayrı bir dosyaya kaydediyoruz
     np.save("reward_history.npy", reward_history)
     print("Eğitim geçmişi 'reward_history.npy' olarak başarıyla kaydedildi!")
     print("Kaydedildi. Artık test aşamasına ve grafik çizimine geçebiliriz!")
