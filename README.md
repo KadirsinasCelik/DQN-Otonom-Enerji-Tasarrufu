@@ -22,9 +22,7 @@ Ajan; dış sıcaklık, iç sıcaklık, gün içi zaman, yalıtım katsayısı v
 12. Görsel çıktılar
 13. Örnek terminal çıktıları
 14. Sonuç ve yorum
-15. CPU/GPU uyumluluk notu
-16. Gelecek geliştirmeler
-17. Geliştirici
+
 
 ---
 
@@ -681,24 +679,3 @@ Modelin öğrendiği temel davranışlar:
 
 ---
 
-## CPU/GPU uyumluluk notu
-
-Eğer model GPU üzerinde eğitilip CPU kullanılan bir bilgisayarda test edilecekse, model yükleme sırasında `map_location` kullanılması önerilir.
-
-Önerilen kullanım:
-
-```python
-agent.policy_net.load_state_dict(
-    torch.load("dqn_model.pth", map_location=agent.device)
-)
-```
-
-Bu düzenleme özellikle `evaluate.py` ve `gif_thermostat.py` dosyalarında model yükleme hatalarını önlemeye yardımcı olur.
-
----
-
-## Geliştirici
-
-**Kadir Çelik**
-
-Bu proje, derin pekiştirmeli öğrenme kullanılarak akıllı bina otomasyonu ve enerji tasarrufu alanında örnek bir otonom kontrol sistemi geliştirmek amacıyla hazırlanmıştır.
