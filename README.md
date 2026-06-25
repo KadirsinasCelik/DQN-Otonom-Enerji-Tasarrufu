@@ -77,7 +77,7 @@ DQN-Otonom-Enerji-Tasarrufu/
 ├── smart_thermostat_dashboard.gif # Dashboard simülasyon çıktısı
 │
 ├── requirements.txt        # Gerekli Python paketleri
-└── README 3.md             # Birleştirilmiş proje dokümantasyonu
+└── README.md             # Birleştirilmiş proje dokümantasyonu
 ```
 
 ---
