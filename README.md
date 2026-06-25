@@ -149,7 +149,7 @@ Test Günü Toplam Ödülü: 6768.66
 PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python gif_thermostat.py
 Dashboard GIF Simülasyonu başlatılıyor (DQN Entegreli)...
 Model yüklendi. Görseller işleniyor...
-İşlem tamam! 'smart_thermostat_dashboard.gif' klasörüne kaydedildi. Şov başlasın! 🚀
+İşlem tamam! 'smart_thermostat_dashboard.gif' klasörüne kaydedildi.
 PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> 
 ```
 
