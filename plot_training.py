@@ -5,7 +5,7 @@ def plot_learning_curve():
     print("Organik eğitim verileri okunuyor...")
     
     try:
-        # Veriyi tamamen organik olarak dosyadan çekiyoruz
+        # Veriyi çekme
         rewards = np.load("reward_history.npy")
     except FileNotFoundError:
         print("HATA: 'reward_history.npy' dosyası bulunamadı. Lütfen önce train.py dosyasını çalıştırın.")
@@ -14,7 +14,7 @@ def plot_learning_curve():
     episodes = range(1, len(rewards) + 1)
     
     # --- HAREKETLİ ORTALAMA (MOVING AVERAGE) HESAPLAMA ---
-    window = 20 # 20 günlük hareketli ortalama alıyoruz
+    window = 20 # 20 günlük hareketli ortalama  
     weights = np.repeat(1.0, window) / window
     moving_avg = np.convolve(rewards, weights, 'valid')
     ma_episodes = range(window, len(rewards) + 1)
