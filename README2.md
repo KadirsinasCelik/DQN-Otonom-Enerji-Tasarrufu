@@ -20,11 +20,10 @@ Ajan; dış sıcaklık, iç sıcaklık, gün içi zaman, yalıtım katsayısı v
 10. Kurulum
 11. Kullanım
 12. Görsel çıktılar
-13. Örnek terminal çıktıları
-14. Sonuç ve yorum
-15. CPU/GPU uyumluluk notu
-16. Gelecek geliştirmeler
-17. Geliştirici
+13. Sonuç ve yorum
+14. CPU/GPU uyumluluk notu
+15. Gelecek geliştirmeler
+16. Geliştirici
 
 ---
 
@@ -77,7 +76,7 @@ DQN-Otonom-Enerji-Tasarrufu/
 ├── smart_thermostat_dashboard.gif # Dashboard simülasyon çıktısı
 │
 ├── requirements.txt        # Gerekli Python paketleri
-└── README 3.md             # Birleştirilmiş proje dokümantasyonu
+└── README2.md              # Geliştirilmiş proje dokümantasyonu
 ```
 
 ---
@@ -569,99 +568,13 @@ python gif_thermostat.py
 
 Ajanın 500 episode boyunca aldığı toplam reward değerleri ve hareketli ortalama eğrisi.
 
-![Eğitim Eğrisi](dqn_egitim_grafigi.png)
-
 ### 1 günlük test simülasyonu
 
 Eğitilmiş ajanın 1 günlük test senaryosunda iç sıcaklık, dış sıcaklık, insan sayısı ve klima aksiyonlarını gösteren grafik.
 
-![Test Sonuçları](dqn_test_sonuclari.png)
-
 ### Dashboard simülasyonu
 
 Ajanın kararlarını görsel olarak sunan dashboard GIF çıktısı.
-
-![Dashboard](smart_thermostat_dashboard.gif)
-
----
-
-## Örnek terminal çıktıları
-
-Aşağıda eğitim, grafik, değerlendirme ve GIF üretim süreçlerine ait tam terminal çıktısı gösterilmiştir:
-
-```text
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python train
-C:\Users\Kadir\AppData\Local\Programs\Python\Python38\python.exe: can't open file 'train': [Errno 2] No such file or directory
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python train.py
-DQN Eğitim Süreci Başlıyor...
---------------------------------------------------
-Bölüm: 10/500 | Ortalama Ödül: -5888.73 | Keşif Oranı (Epsilon): 0.951
-Bölüm: 20/500 | Ortalama Ödül: -10920.12 | Keşif Oranı (Epsilon): 0.905
-Bölüm: 30/500 | Ortalama Ödül: -11175.32 | Keşif Oranı (Epsilon): 0.860
-Bölüm: 40/500 | Ortalama Ödül: -8315.99 | Keşif Oranı (Epsilon): 0.818
-Bölüm: 50/500 | Ortalama Ödül: -3744.04 | Keşif Oranı (Epsilon): 0.778
-Bölüm: 60/500 | Ortalama Ödül: -4741.26 | Keşif Oranı (Epsilon): 0.740
-Bölüm: 70/500 | Ortalama Ödül: -8379.16 | Keşif Oranı (Epsilon): 0.704
-Bölüm: 80/500 | Ortalama Ödül: -4790.38 | Keşif Oranı (Epsilon): 0.670
-Bölüm: 90/500 | Ortalama Ödül: -5587.80 | Keşif Oranı (Epsilon): 0.637
-Bölüm: 100/500 | Ortalama Ödül: -1573.48 | Keşif Oranı (Epsilon): 0.606
-Bölüm: 110/500 | Ortalama Ödül: -2240.06 | Keşif Oranı (Epsilon): 0.576
-Bölüm: 120/500 | Ortalama Ödül: -3166.04 | Keşif Oranı (Epsilon): 0.548
-Bölüm: 130/500 | Ortalama Ödül: -2476.69 | Keşif Oranı (Epsilon): 0.521
-Bölüm: 140/500 | Ortalama Ödül: -664.70 | Keşif Oranı (Epsilon): 0.496
-Bölüm: 150/500 | Ortalama Ödül: 1002.26 | Keşif Oranı (Epsilon): 0.471
-Bölüm: 160/500 | Ortalama Ödül: -340.78 | Keşif Oranı (Epsilon): 0.448
-Bölüm: 170/500 | Ortalama Ödül: 1272.10 | Keşif Oranı (Epsilon): 0.427
-Bölüm: 180/500 | Ortalama Ödül: -624.91 | Keşif Oranı (Epsilon): 0.406
-Bölüm: 190/500 | Ortalama Ödül: 1189.35 | Keşif Oranı (Epsilon): 0.386
-Bölüm: 200/500 | Ortalama Ödül: -2209.84 | Keşif Oranı (Epsilon): 0.367
-Bölüm: 210/500 | Ortalama Ödül: -411.84 | Keşif Oranı (Epsilon): 0.349
-Bölüm: 220/500 | Ortalama Ödül: 835.27 | Keşif Oranı (Epsilon): 0.332
-Bölüm: 230/500 | Ortalama Ödül: -666.50 | Keşif Oranı (Epsilon): 0.316
-Bölüm: 240/500 | Ortalama Ödül: 2347.15 | Keşif Oranı (Epsilon): 0.300
-Bölüm: 250/500 | Ortalama Ödül: 3358.41 | Keşif Oranı (Epsilon): 0.286
-Bölüm: 260/500 | Ortalama Ödül: 633.83 | Keşif Oranı (Epsilon): 0.272
-Bölüm: 270/500 | Ortalama Ödül: 1182.95 | Keşif Oranı (Epsilon): 0.258
-Bölüm: 280/500 | Ortalama Ödül: 2340.91 | Keşif Oranı (Epsilon): 0.246
-Bölüm: 290/500 | Ortalama Ödül: 1139.60 | Keşif Oranı (Epsilon): 0.234
-Bölüm: 300/500 | Ortalama Ödül: 2636.07 | Keşif Oranı (Epsilon): 0.222
-Bölüm: 310/500 | Ortalama Ödül: 1281.89 | Keşif Oranı (Epsilon): 0.211
-Bölüm: 320/500 | Ortalama Ödül: 1924.97 | Keşif Oranı (Epsilon): 0.201
-Bölüm: 330/500 | Ortalama Ödül: 1824.47 | Keşif Oranı (Epsilon): 0.191
-Bölüm: 340/500 | Ortalama Ödül: 2032.08 | Keşif Oranı (Epsilon): 0.182
-Bölüm: 350/500 | Ortalama Ödül: 94.10 | Keşif Oranı (Epsilon): 0.173
-Bölüm: 360/500 | Ortalama Ödül: 1609.67 | Keşif Oranı (Epsilon): 0.165
-Bölüm: 370/500 | Ortalama Ödül: 322.93 | Keşif Oranı (Epsilon): 0.157
-Bölüm: 380/500 | Ortalama Ödül: 1155.04 | Keşif Oranı (Epsilon): 0.149
-Bölüm: 390/500 | Ortalama Ödül: 2899.13 | Keşif Oranı (Epsilon): 0.142
-Bölüm: 400/500 | Ortalama Ödül: 3532.28 | Keşif Oranı (Epsilon): 0.135
-Bölüm: 410/500 | Ortalama Ödül: 2857.76 | Keşif Oranı (Epsilon): 0.128
-Bölüm: 420/500 | Ortalama Ödül: 1332.76 | Keşif Oranı (Epsilon): 0.122
-Bölüm: 430/500 | Ortalama Ödül: 3254.52 | Keşif Oranı (Epsilon): 0.116
-Bölüm: 440/500 | Ortalama Ödül: 704.17 | Keşif Oranı (Epsilon): 0.110
-Bölüm: 450/500 | Ortalama Ödül: 3371.76 | Keşif Oranı (Epsilon): 0.105
-Bölüm: 460/500 | Ortalama Ödül: 3943.74 | Keşif Oranı (Epsilon): 0.100
-Bölüm: 470/500 | Ortalama Ödül: 3592.33 | Keşif Oranı (Epsilon): 0.095
-Bölüm: 480/500 | Ortalama Ödül: 3888.69 | Keşif Oranı (Epsilon): 0.090
-Bölüm: 490/500 | Ortalama Ödül: 4896.30 | Keşif Oranı (Epsilon): 0.086
-Bölüm: 500/500 | Ortalama Ödül: 3867.91 | Keşif Oranı (Epsilon): 0.082
---------------------------------------------------
-Eğitim Tamamlandı! Model 'dqn_model.pth' olarak kaydediliyor...
-Eğitim geçmişi 'reward_history.npy' olarak başarıyla kaydedildi!
-Kaydedildi. Artık test aşamasına ve grafik çizimine geçebiliriz!
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python plot_training.py
-Organik eğitim verileri okunuyor...
-Şov Zamanı! Profesyonel eğitim grafiği 'dqn_egitim_grafigi.png' adıyla kaydedildi.
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python evaluate.py
-Test simülasyonu başlatılıyor...
-Eğitilmiş model başarıyla yüklendi!
-Test Günü Toplam Ödülü: 6768.66
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> python gif_thermostat.py
-Dashboard GIF Simülasyonu başlatılıyor (DQN Entegreli)...
-Model yüklendi. Görseller işleniyor...
-İşlem tamam! 'smart_thermostat_dashboard.gif' klasörüne kaydedildi.
-PS C:\Users\Kadir\Desktop\DQN Otonom Enerji Tasarrufu> 
-```
 
 ---
 
@@ -694,6 +607,22 @@ agent.policy_net.load_state_dict(
 ```
 
 Bu düzenleme özellikle `evaluate.py` ve `gif_thermostat.py` dosyalarında model yükleme hatalarını önlemeye yardımcı olur.
+
+---
+
+## Gelecek geliştirmeler
+
+Projeye ileride şu geliştirmeler eklenebilir:
+
+- State normalizasyonu uygulanabilir
+- Double DQN mimarisi eklenebilir
+- Dueling DQN denenebilir
+- Prioritized Experience Replay kullanılabilir
+- Eğitim checkpoint sistemi eklenebilir
+- Enerji tüketimi kWh cinsinden ayrıca hesaplanabilir
+- Farklı bina tipleri ve farklı yalıtım senaryoları karşılaştırılabilir
+- Web tabanlı dashboard arayüzü geliştirilebilir
+- Gerçek sıcaklık sensörü verileriyle model test edilebilir
 
 ---
 
